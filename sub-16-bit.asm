@@ -1,0 +1,11 @@
+;8201H - 2434H
+CLR C
+
+MOV A, #01H
+SUBB A, #34H
+MOV R2, A
+
+MOV A, #82H
+SUBB A, #24H
+MOV R1, A
+

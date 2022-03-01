@@ -1,0 +1,5 @@
+MOV A, 20H
+MOV B, 30H
+DIV AB
+
+MOV R2, PSW

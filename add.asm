@@ -1,0 +1,3 @@
+MOV R0, 20H
+MOV A, 30H
+ADD A, R0
