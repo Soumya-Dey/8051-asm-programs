@@ -1,0 +1,4 @@
+BACK: MOV A, P1
+	  ANL A, #01H
+	  CJNE A, #01H, BACK
+	  MOV P3, #AAH
