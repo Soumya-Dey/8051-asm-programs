@@ -1,4 +1,4 @@
-convert 3digit BCD to hex:-
+;convert 3digit BCD to hex:-
 
 R0 - first half
 R1 - second half
@@ -31,7 +31,7 @@ MOV A, R0
 ANL A, #0FH
 MOV B, #64H
 MUL AB
-ADD R2 			
+ADD A, R2 			
 MOV R2, A
 MOV A, R3
 jnc lbl2:

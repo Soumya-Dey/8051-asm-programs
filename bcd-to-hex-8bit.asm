@@ -1,0 +1,15 @@
+MOV A, 20H ; A = 12H
+MOV R5, A ; R5 = 12H
+ANL A, #0F0H ; A = 10H
+SWAP A ; A = 01H
+MOV R1, A ; R1 = 01H
+MOV A, R5 ; A = 12H
+ANL A, #0FH ; A = 02H
+MOV R2, A ; R2 = 02H
+
+MOV A, R1 ; A = 01H
+MOV B, #0AH
+MUL AB ; A = 0AH
+ADD A, R2; A = 0CH
+MOV 22H, A
+jmp $

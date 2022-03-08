@@ -1,0 +1,12 @@
+MOV A, 20H
+ADD A, 21H
+MOV R5, A
+SUBB A, #09H
+JZ skip
+JC skip
+MOV A, R5
+ADD A, #06H
+MOV 22H, A
+jmp $
+
+skip: MOV 22H, R5
