@@ -1,11 +1,8 @@
 MOV A, #02H
-MOV R2, A
-MOV R3, A
-MOV R0, #03H
+MOV R0, #02H
+MOV R1, A
 
-loop: MOV A, R2
-	  MOV B, R3
+loop: MOV B, R1
 	  MUL AB
-	  MOV R2, A
 	  DJNZ R0, loop
 END

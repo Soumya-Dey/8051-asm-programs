@@ -8,7 +8,7 @@ MOV R3, A
 MOV A, 21H
 ANL A, #0FH
 ADD A, R3
-SUBB A, #0AH
+SUBB A, #09H
 JZ next
 JC next
 MOV R1, A ; auxiliary carry
@@ -25,7 +25,7 @@ next: MOV A, 20H
 	  ANL A, #0F0H
 	  SWAP A
 	  ADD A, R3
-	  SUBB A, #0AH
+	  SUBB A, #09H
 	  JZ done
 	  JC done
 	  MOV R0, A ; carry

@@ -1,0 +1,16 @@
+MOV A, #0FFh
+MOV B, #64h
+DIV AB ; A=02, B=55
+MOV R0, A
+
+MOV A, B
+MOV B, #0AH
+DIV AB ; A=05, B=05
+MOV R2, A
+
+MOV A, B
+MOV R1, A
+MOV A, R2 ; A=05
+SWAP A ; A=50
+ORL A, R1 ; A=55
+MOV R1, A
